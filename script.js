@@ -15,14 +15,20 @@ const zone=document.getElementById("questions");
 quiz.forEach((q,i)=>{
 
 let html="<h3>"+(i+1)+". "+q.question+"</h3>";
+if(q.type==="texte"){
+    html+='<textarea name="programme"required placeholder="Erivervotre reponse ici"></textarea>';
+}
+else{
+    q.choix.forEach(c=>{
 
-q.choix.forEach(c=>{
-
-html+=`<label>
-<input type="radio" name="q${i}" value="${c}" required> ${c}
-</label>`;
+    html+=`<label>
+    <input type="radio" name="q${i}" value="${c}" required> ${c}
+    </label>`;
 
 });
+
+}
+
 
 zone.innerHTML+=html;
 
