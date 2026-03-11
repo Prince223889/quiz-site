@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Quiz du Groupe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Quiz du Groupe</h1>
+
+<p id="timer"></p>
+
+<form id="quizForm">
+
+<input type="text" name="nom" placeholder="Nom" required>
+
+<input type="text" name="prenom" placeholder="Prénom" required>
+
+<div id="questions"></div>
+
+<button type="submit">Envoyer</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+<script src="quiz.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
